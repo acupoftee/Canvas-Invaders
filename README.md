@@ -1,2 +1,2 @@
-# Canvas-Invaders
+# Canvas Invaders
 minimalistic space invaders
