@@ -1,4 +1,3 @@
-
 ArrayList<Alien> AlienList = new ArrayList();
 ArrayList<Bullet> bulletList = new ArrayList();
 ArrayList<Particle> blastList = new ArrayList();
@@ -26,8 +25,7 @@ void draw() {
       b.move();
       b.show();
     }
-    //-------------------------
-    //------------------------------
+
     for (int i=AlienList.size ()-1; i>=0; i--) {
       Alien A = AlienList.get(i);
       if (!gamelost)A.move();
@@ -59,13 +57,13 @@ void draw() {
       }
     }
   } else startmenu();
-  //--------------------------------------
+
   control();
   pushMatrix();
   translate(sx, y);
   ship();
   popMatrix();
-  //--------------------------------------
+
   if (gamewin) {
     rectMode(CENTER);
     noStroke();
